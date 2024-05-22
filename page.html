@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,200;1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Welcome Page</title>
+</head>
+
+<body> 
+        <div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <img style="width: 50px;" class="logo" src="images/icon-dice.svg" alt="logo" />
+                <h1>Advise Generator App</h1>
+                <a class="navbar-brand" href="#about">About</a>
+              </div>
+            </nav>
+          </div>
+
+        <!-- <div class="logo"><img src="images/icon-dice.svg" alt="logo" /></div> -->
+        <!-- <div class="logo">Advise Generator App</div> -->
+        <!-- <div class="nav-bar"> -->
+            <!-- <ul>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div> -->
+    <div class="hero">
+        <div class="content">
+            <div class="button">Get Advise Now</div>
+        </div>
+    </div>
+
+    <!----About Section Start---------------------------------->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="main">
+            <img src="images/about.PNG" alt="">
+            <div class="about-text">
+                <p>Welcome to Advice Generator App, your go-to source for spontaneous wisdom and quirky insights! 
+                Our mission is to bring a smile to your face and a spark to your day with a diverse range of random advice generated just for you. 
+                Whether you're seeking a quick pick-me-up, a bit of motivation, or a fresh perspective on life's little conundrums, Advice Generator App is here to deliver. 
+                Powered by a sophisticated API that taps into an extensive database, we offer unique and thought-provoking advice with every click. 
+                Our platform stands out for its endless variety, instant access, and engaging experience, all aimed at uplifting your spirits and providing fresh perspectives. 
+                Join us and embrace the magic of random advice!</p>
+
+            </div>
+        </div>
+    </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Scroll to the About section
+            $('a[href="#about"]').on('click', function(event) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $('.about').offset().top
+                }, 800);
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+
+    // Add the existing code for the "Start Cooking" button
+    var startCookingButton = document.querySelector('.button');
+
+    if (startCookingButton) {
+        startCookingButton.addEventListener('click', function () {
+            window.location.href = 'index.html';
+        });
+    }
+});
+
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
+</body>
+
+</html>
